@@ -26,7 +26,7 @@ async def cd (event:Event,event1:GroupMessageEvent,bot:Bot):
     user_id = event.get_user_id()
     user = event1.group_id
     await menu.send(str(user))
-    if user_id in userID and user == 566077032:
+    if user_id in userID and user == 群号:
         await menu.send('群管菜单 \n1. /开启群禁言\n2. /关闭群禁言\n3. /禁言\n4. /踢出')
 
 #no群禁言事件
@@ -40,8 +40,8 @@ async def jy_no(event:Event,bot:Bot,event1:GroupMessageEvent):
         userID.append(str(library[i][0]))
     user_id = event.get_user_id()
     user = event1.group_id
-    if user_id in userID and user == 566077032:
-        implement = await bot.call_api('set_group_whole_ban',**{'group_id':566077032,'enable':True})
+    if user_id in userID and user == 群号:
+        implement = await bot.call_api('set_group_whole_ban',**{'group_id':群号,'enable':True})
         await Taboo_NO.send(Message('[CQ:tts,text=群禁言已开启]'))
 #off群禁言事件
 Taboo_OOF = on_command('关闭群禁言',priority=5)
@@ -55,8 +55,8 @@ async def jy_oof(event:Event,bot:Bot,event1:GroupMessageEvent):
         userID.append(str(library[i][0]))
     user_id = event.get_user_id()
     user = event1.group_id
-    if user_id in userID and user == 566077032:
-        implement = await bot.call_api('set_group_whole_ban',**{'group_id':566077032,'enable':False})
+    if user_id in userID and user == 群号:
+        implement = await bot.call_api('set_group_whole_ban',**{'group_id':群号,'enable':False})
         await Taboo_NO.send(Message('[CQ:tts,text=群禁言已关闭]'))
 #禁言事件
 banned_to_post = on_command('禁言',priority=5)
@@ -69,7 +69,7 @@ async def jy(event:Event,Event:GroupMessageEvent,bot:Bot):
         userID.append(str(library[i][0]))
     user_id = event.get_user_id()
     user = Event.group_id
-    if user_id in userID and user == 566077032:
+    if user_id in userID and user == 群号:
 
         primary_bata = Event.get_event_description()
         rule=re.compile('\[CQ:at,qq=(\d+)]')
@@ -84,7 +84,7 @@ async def jy(event:Event,Event:GroupMessageEvent,bot:Bot):
                     time_list[i] = int(time_list[i])
                 Relation = dict(zip(name_list,time_list))
                 print(name_list, '\n',time_list, '\n',primary_bata,'\n',Relation)
-                if not '839682307' in name_list:
+                if not '群主' in name_list:
                     msg = ''
                     msg1=''
                     name = []
@@ -120,7 +120,7 @@ async def TC(Event:Event,event:GroupMessageEvent,bot:Bot):
         userID.append(str(library[i][0]))
     user_id = Event.get_user_id()
     user = event.group_id
-    if  user_id in userID and user == 566077032:
+    if  user_id in userID and user == 群号:
         Data = event.get_event_description()
         rule = re.compile('\[CQ:at,qq=(\d+)]')
         name_list = rule.findall(Data)
