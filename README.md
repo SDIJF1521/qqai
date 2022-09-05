@@ -26,7 +26,7 @@
 
 \$*[不良词汇查看]  （只有群主&管理可用）
 
-[!]( https://www.bilibili.com/video/BV1PD4y1z7XL?share_source=copy_web&vd_source=552628747d3128fe2161ab387bda673c)
+[![Watch the video](https://raw.github.com/GabLeRoux/WebMole/master/ressources/WebMole_Youtube_Video.png)](https://www.bilibili.com/video/BV1PD4y1z7XL?share_source=copy_web&vd_source=552628747d3128fe2161ab387bda673c)
 
 如果你要使用这个机器人的话那么你需要这样做
 首先请确保你的计算机上面有mysql数据库（最好mysql的用户名和密码都为root）和以下第三方库：
