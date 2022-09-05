@@ -20,13 +20,14 @@
 
 关闭群禁言    （只有群主&管理可用）
 
-*[不良词汇添加] （只有群主&管理可用）
+\*[不良词汇添加] （只有群主&管理可用）
 
--*[不良词汇删减] （只有群主&管理可用）
+\-*[不良词汇删减] （只有群主&管理可用）
 
-$*[不良词汇查看]  （只有群主&管理可用）
+\$*[不良词汇查看]  （只有群主&管理可用）
 
 <iframe src="//player.bilibili.com/player.html?aid=730212694&bvid=BV1PD4y1z7XL&cid=823693531&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
+
 
 如果你要使用这个机器人的话那么你需要这样做
 首先请确保你的计算机上面有mysql数据库（最好mysql的用户名和密码都为root）和以下第三方库：
