@@ -17,7 +17,7 @@ async def h_r(bot: Bot, event: GroupIncreaseNoticeEvent, state: T_State):  # eve
     msg = at_ + '欢迎勇者大人：\n 您就是被命运召唤而来前来拯救我们的公会的勇者吗，快救救孩子们吧，希望勇者大人为我们而战！'
     msg = Message(msg)
     print(at_)
-    if event.group_id == 566077032:
+    if event.group_id == 群号:
         await welcom.finish(message=Message(f'{msg}'))  # 发送消息
 
 # 群友退群
@@ -29,5 +29,5 @@ async def h_r(bot: Bot, event: GroupDecreaseNoticeEvent, state: T_State):  # eve
     msg = Message(msg)
     print(at_)
 
-    if event.group_id == 566077032 :
+    if event.group_id == 群号 :
         await welcom.finish(message=Message(f'{msg}'))  # 发送消息
