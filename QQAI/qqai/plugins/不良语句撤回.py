@@ -27,7 +27,7 @@ async def forbid_word(event1:GroupMessageEvent,event:Event):
         userID.append(str(library[i][0]))
     user_id = event.get_user_id()
     user = event1.group_id
-    if user_id in userID and user == 566077032:
+    if user_id in userID and user == 群号:
         cursor.execute('select wordlist from word')
         blacklist_word = cursor.fetchall()
         blacklist_word_list = []
@@ -66,7 +66,7 @@ async def dl(event1:GroupMessageEvent,event:Event):
         userID.append(str(library[i][0]))
     user_id = event.get_user_id()
     user = event1.group_id
-    if user_id in userID and user == 566077032:
+    if user_id in userID and user == 群号:
         cursor.execute('select wordlist from word')
         blacklist_word = cursor.fetchall()
         blacklist_word_list = []
@@ -94,7 +94,7 @@ async def dl(event1:GroupMessageEvent,event:Event):
 @withdraw.handle()
 async def WM(event:GroupMessageEvent,bot:Bot):
     user = event.group_id
-    if user == 566077032:
+    if user == 群号:
         cursor.execute('select wordlist from word')
         word = cursor.fetchall()
         word_list = []
@@ -115,7 +115,7 @@ async def WM(event:GroupMessageEvent,bot:Bot):
                 Data2= Data2+i
             for j in word_list:
                 Data = re.compile(j,re.IGNORECASE).findall(re.compile('] "(.+)').search(Data2).group().replace(' ',''))
-                print(Data2 ,'\n'+re.compile('\[群:566077032] "(.+)').search(Data2).group().replace(' ',''),'\n',Data,'\n'+j)
+                print(Data2 ,'\n'+re.compile('\[群:群号] "(.+)').search(Data2).group().replace(' ',''),'\n',Data,'\n'+j)
                 if len(Data) !=0:
                     await bot.delete_msg(message_id=event.message_id)
                     break
@@ -128,7 +128,7 @@ async def CK(event:GroupMessageEvent,Event:Event):
         userID.append(str(library[i][0]))
     user_id = Event.get_user_id()
     user = event.group_id
-    if user_id in userID and user == 566077032:
+    if user_id in userID and user == 群号:
         cursor.execute('select wordlist from word')
         blacklist_word = cursor.fetchall()
         blacklist_word_list = []
