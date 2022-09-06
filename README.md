@@ -49,7 +49,7 @@
 
 第一张表名为web字段为name ; url 类型 varchar
 
-第二张表名为qd 字段 name ; 积分 日期 ； 天数 类型 varchar ； int ; varchar ; int
+第二张表名为qd 字段 name ; 积分 日期  天数 ; 类型 varchar ； int ; varchar ; int
 
 第三张表名为cq 字段 name ; id ; 日期 类型 varchar ； int ; varchar
 
