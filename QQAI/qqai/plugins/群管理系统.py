@@ -132,7 +132,7 @@ Refresh = on_command('sx',aliases={'刷新'},priority=5)
 @Refresh.handle()
 async def sx (bot:Bot,Event:GroupMessageEvent):
     user = Event.group_id
-    if user == 566077032:
+    if user == 群号:
         cursor.execute('select admin from gl')
         library = cursor.fetchall()
         userID = []
