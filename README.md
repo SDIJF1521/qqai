@@ -1,6 +1,7 @@
 # qqai
+# 项目介绍
 这是一个高度依赖mysql数据库的机器人
-这个机器人有一下功能
+ 这个机器人有一下功能
 
 签到
 
@@ -35,6 +36,7 @@
 \-*[不良词汇删减] （只有群主&管理可用）
 
 \$*[不良词汇查看]  （只有群主&管理可用）
+# 配置
 
 [![Watch the video](https://raw.github.com/GabLeRoux/WebMole/master/ressources/WebMole_Youtube_Video.png)](https://www.bilibili.com/video/BV1PD4y1z7XL?share_source=copy_web&vd_source=552628747d3128fe2161ab387bda673c)
 
